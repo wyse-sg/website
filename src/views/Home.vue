@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p>
+      We are a premier garment accessories supplier based in Singapore,
+       serving customers with excellence since 1997.
+    </p>
+    <p>
+      We strive to build strong partnerships based on confidence and trust,
+       and are dedicated to providing high quality products that meet global
+       safety and environmental standards.
+    </p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
 };
 </script>

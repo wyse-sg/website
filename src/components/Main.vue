@@ -2,10 +2,10 @@
   <div class="main-content">
     <div class="main-content--body">
       <div class="left">
-
+        <List/>
       </div>
       <div class="right">
-
+        <router-view/>
       </div>
     </div>
     <Header/>
@@ -15,11 +15,13 @@
 <script>
 
 import Header from './Header.vue';
+import List from './List.vue';
 
 export default {
   name: 'Main',
   components: {
     Header,
+    List,
   },
 };
 </script>
@@ -41,12 +43,20 @@ export default {
 
       .left {
         width: 50%;
+        // flex-grow: 1;
         height: 40%;
         border-right: 1px solid #bbb;
+        padding: 0 5%;
       }
+
       .right {
         width: 50%;
         height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5%;
+        text-align: left;
       }
     }
   }
