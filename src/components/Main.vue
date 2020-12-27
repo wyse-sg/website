@@ -2,26 +2,30 @@
   <div class="main-content">
     <div class="main-content--body">
       <div class="left">
-        <List/>
+        <!-- <List/> -->
+        <img alt="small-logo" src="../assets/logo3x.png"/>
       </div>
       <div class="right">
-        <router-view/>
+        <!-- <router-view/> -->
+        <Home />
       </div>
     </div>
-    <Header/>
+    <!-- <Header/> -->
   </div>
 </template>
 
 <script>
 
-import Header from './Header.vue';
-import List from './List.vue';
+// import Header from './Header.vue';
+import Home from '../views/Home.vue';
+// import List from './List.vue';
 
 export default {
   name: 'Main',
   components: {
-    Header,
-    List,
+    Home,
+    // Header,
+    // List,
   },
 };
 </script>
@@ -42,15 +46,23 @@ export default {
       width: 100%;
 
       .left {
-        width: 50%;
+        width: 33%;
         // flex-grow: 1;
         height: 40%;
         border-right: 1px solid #bbb;
         padding: 0 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 60%;
+        }
       }
 
       .right {
-        width: 50%;
+        // width: 50%;
+        flex-grow: 1;
         height: 40%;
         display: flex;
         flex-direction: column;

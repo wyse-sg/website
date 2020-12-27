@@ -9,6 +9,9 @@
        and are dedicated to providing high quality products that meet global
        safety and environmental standards.
     </p>
+    <p>
+      Reach out to us at <a href="mailto:enquiries@wyseex.com">enquiries@wyseex.com</a>.
+    </p>
   </div>
 </template>
 

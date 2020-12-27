@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Jumbotron/>
+    <!-- <Jumbotron/> -->
     <Main/>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -12,13 +12,13 @@
 
 <script>
 // // @ is an alias to /src
-import Jumbotron from '@/components/Jumbotron.vue';
+// import Jumbotron from '@/components/Jumbotron.vue';
 import Main from '@/components/Main.vue';
 
 export default {
   name: 'App',
   components: {
-    Jumbotron,
+    // Jumbotron,
     Main,
   },
 };
